@@ -1,0 +1,50 @@
+@use '../variables'
+@use '../mixins'
+
+.technologiesContainer
+    margin-bottom: 1rem
+
+    .technologiesGrid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        .technologiesCard
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #000000
+            width: 45%
+            border-radius: variables.$card-border-radius
+
+            h3
+                color: #000000
+                margin-bottom: 1rem
+
+            svg
+                font-size: 6rem
+        
+        #html
+            svg
+                color: #b22222    
+
+        #css
+            svg
+                color: #000080   
+
+        #node
+            svg
+                color: #008000   
+
+        #js
+            svg
+                color: #191970                  
+
+        #mysql
+            svg
+                color: #000000                        
+        
+        #react
+            svg
+                color: #4682b4  
+
